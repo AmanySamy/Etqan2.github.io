@@ -9,11 +9,11 @@ $(function() {
 	$(window).scroll(function(){
 		var navbar = $('nav');
 		if($(window).scrollTop() >= navbar.height()){
-			if(!navbar.hasClass('scrolled  fixed-top')){
-				navbar.addClass('scrolled  fixed-top');
+			if(!navbar.hasClass('scrolled')){
+				navbar.addClass('scrolled');
 			}			
 		}else{
-			navbar.removeClass('scrolled  fixed-top');
+			navbar.removeClass('scrolled');
 		}
 	});
 	
@@ -34,13 +34,12 @@ $(function() {
 		rtl:true,
 		dots:false, 
 		nav:true,
-		navText :['<i class="fa fa-chevron-up"></i>','<i class="fa fa-chevron-down"></i>'],
-		items:1,
-		animateOut: 'slideOutUp', 
-		animateIn: 'slideInUp',
+		navText :['<img src="img/rightArrow.png" alt="">','<img src="img/leftArrow.png" alt="">'],
+		items:3,
 		autoplay: true,
 		autoplayHoverPause: true,
 		smartSpeed:1000,
+	
 		
 	});
 
